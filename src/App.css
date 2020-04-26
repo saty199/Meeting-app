@@ -1,5 +1,6 @@
 .App {
   text-align: center;
+  margin-top: 20px;
 }
 
 .App-logo {
@@ -28,6 +29,52 @@
   color: #61dafb;
 }
 
+.list-item{
+  display: flex;
+    justify-content: space-between;
+    border: 0px solid black;
+    box-shadow: black;
+    margin-top: 10px;
+    padding: 15px 25px;
+    box-shadow: 1px 4px 10px #65788e;
+}
+
+.header{
+  font-size: 28px;
+  color: blue;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.react-time-picker__wrapper{
+  border: none !important;
+}
+.addmeeting{
+  position: absolute;
+  /* top: 20px; */
+  bottom: 50px;
+  left: 50%;
+}
+.setLabel{
+  display: inline-block;
+    /* margin-bottom: .5rem; */
+    font-size: 16px;
+    padding: 7px;
+}
+.time-picker{
+  display: flex;
+  background: lavender;
+  justify-content: space-around;
+  box-shadow: 1px 1px 9px #b3c6dc;
+}
+.saveButton{
+  padding: 5px 40px;
+}
+.custom-card{
+  position: absolute;
+  padding: 30px;
+  margin: 71px;
+  box-shadow: 1px 1px 12px #5E90CA;
+}
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
@@ -35,4 +82,9 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+body {
+  margin: 0;
+  font-family: 'Muli', sans-serif;
 }

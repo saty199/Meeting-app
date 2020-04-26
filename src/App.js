@@ -1,25 +1,19 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
+import { Switch, Route, Router, Redirect } from 'react-router-dom';
+import { createBrowserHistory } from 'history';
+import Meeting from './Meeting';
+import AddMeeting from './addMeeting';
+
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Router history={createBrowserHistory()}>
+      <Switch>
+        <Route path="/" exact component={Meeting} />
+        <Route path='/add-meeting' exact component={AddMeeting} />
+      </Switch>
+    </Router>
   );
 }
 
